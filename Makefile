@@ -350,7 +350,7 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 
 MODFLAGS = -O3 -ffast-math -fgcse-lm -fgcse-sm -fsched-spec-load 
 	   -fforce-addr -fsingle-precision-constant -mtune=cortex-a8
-	   -marm -mfpu=neon-vfpv3 -mcpu=cortex-a8
+	   -marm -mfpu=neon -mcpu=cortex-a8
 
 CFLAGS_MODULE = $(MODFLAGS) -DMODULE
 AFLAGS_MODULE = $(MODFLAGS) -DMODULE --strip-debug
@@ -374,7 +374,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks \
 		   -marm -mfloat-abi=soft -march=armv7-a \
-		   -mfpu=neon-vfpv3 -ffast-math -pipe \
+		   -mfpu=neon -ffast-math -pipe \
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
