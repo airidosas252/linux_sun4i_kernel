@@ -23,7 +23,7 @@
 #include <mach/sys_config.h>
 
 
-int mali_clk_div = 3;
+int mali_clk_div = 2;
 module_param(mali_clk_div, int, S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IROTH);
 MODULE_PARM_DESC(mali_clk_div, "Clock divisor for mali");
 
