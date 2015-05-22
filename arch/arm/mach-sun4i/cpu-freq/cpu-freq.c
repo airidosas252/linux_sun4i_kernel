@@ -48,6 +48,8 @@ struct cpufreq_dvfs {
     unsigned int    volt;   /* voltage for the frequency    */
 };
 static struct cpufreq_dvfs dvfs_table[] = {
+    {.freq = 1344000000, .volt = 1700},
+    {.freq = 1296000000, .volt = 1675},
     {.freq = 1248000000, .volt = 1650},
     {.freq = 1200000000, .volt = 1625},
     {.freq = 1152000000, .volt = 1600},
